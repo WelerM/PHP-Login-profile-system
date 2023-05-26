@@ -1,4 +1,4 @@
-# PHP-Login-profile-system
+# PHP Login & profile system
 
 
 This system has both login and profile customization features. I intend to add many more functionalities since this project is in its very beginning. The ideia behind this project is to create an open platform where users can register and post content related to a specific subject.

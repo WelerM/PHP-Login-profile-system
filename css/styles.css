@@ -1,0 +1,425 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    color: white;
+    font-family: sans-serif;
+    background-color: white;
+    height: 100vh;
+    color: black;
+}
+
+
+
+
+
+nav {
+    background-color: rgba(18, 197, 18, 0.829);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 50px;
+    gap: 15px;
+}
+
+.header-user-info>h3 {
+    color: white;
+}
+
+.header-img-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+
+
+.wrapper {
+    display: flex;
+    height: fit-content;
+    height: fit-content;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+p {
+    word-break: break-all;
+    color: black;
+}
+
+
+
+.signup_form {
+    margin: auto;
+    width: 600px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+form>input {
+    height: 30px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.error {
+    color: rgb(255, 63, 63);
+}
+
+.signed_up {
+    color: rgb(14, 185, 14);
+}
+
+
+
+
+
+/* ========= USER LIST =========== */
+.user-list-container {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(255, 255, 255, 0.616);
+    padding: 20px;
+    gap: 15px;
+    border-right: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.user-list-container>h4 {
+    color: rgba(0, 0, 0, 0.712);
+    text-align: center;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.438);
+}
+
+
+/* ======= POSTS ======= */
+.posts {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #EEEEEE;
+}
+
+.post-form {
+    width: 60%;
+    padding-bottom: 20px;
+    padding: 0px;
+    height: fit-content;
+    display: flex;
+    display: none;
+
+}
+
+.js-post-form-open {
+    display: flex;
+}
+
+.posts>form>textarea {
+    width: 100%;
+    outline: none;
+    height: 80%;
+    resize: none;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+
+}
+
+.posts>form>button {
+    width: 100px;
+    font-size: 16px;
+    font-family: sans-serif;
+    height: 30px;
+    background-color: rgb(43, 204, 10);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.posts>form>button:hover {
+    cursor: pointer;
+    background-color: rgb(36, 172, 9);
+    transition: 0.5s;
+}
+
+.btn-open-post-form {
+    width: 100px;
+    font-size: 16px;
+    font-family: sans-serif;
+    height: 30px;
+    background-color: rgb(43, 204, 10);
+    border: none;
+    border-radius: 20px;
+    transition: 0.5s;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10PX;
+    display: flex;
+    gap: 7px;
+}
+
+.btn-open-post-form:hover {
+    cursor: pointer;
+    background-color: rgb(36, 172, 9);
+    transition: 0.5s;
+}
+
+.img-open-post-form {
+    height: 70%;
+}
+
+.btn-open-post-form-text {
+    color: white;
+}
+
+
+
+
+/* ======== POSTS CONTAINER ========= */
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+    padding-left: 5px;
+}
+
+.post {
+    display: flex;
+    padding: 15px;
+    padding-left: 0px;
+    position: relative;
+    width: 60%;
+}
+
+.post:hover {
+    background-color: rgba(255, 255, 255, 0.068);
+}
+
+.posts-user-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.posts-content {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: center;
+}
+
+.post-owner-name {
+    color: rgba(1, 173, 44, 0.76);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.post-text {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+}
+.post-date{
+    font-size:15px ;
+    position: absolute;
+    right: 20px;
+    color: rgba(0, 0, 0, 0.788);
+}
+
+
+
+footer {
+    height: 100px;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+
+
+/* ============ LOGIN PAGE ============== */
+.login-page {
+    background-color: #EEEEEE;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-form {
+    width: 500px;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.login-form>h2 {
+    color: rgba(0, 0, 0, 0.911);
+}
+
+.login-form>form>input {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
+
+.login-form>form>button {
+    width: 100%;
+    font-size: 16px;
+    font-family: sans-serif;
+    height: 30px;
+    background-color: rgb(43, 204, 10);
+    border: none;
+    border-radius: 20px;
+    transition: 0.5s;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10PX;
+    display: flex;
+    gap: 7px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.login-form>form>button:hover {
+    cursor: pointer;
+    background-color: rgb(36, 172, 9);
+    transition: 0.5s;
+
+}
+
+/* ============ SIGNUP PAGE ============== */
+
+.signup-page {
+    background-color: #EEEEEE;
+    width: 100%;
+    height: 100vh;
+}
+
+.signup-form {
+    width: 500px;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.signup-form>h2 {
+    color: rgba(0, 0, 0, 0.911);
+}
+
+.signup-form>form>input {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+    width: 100%;
+    outline: none;
+    height: 40px;
+}
+
+.signup-form>form>button {
+    width: 100%;
+    font-size: 16px;
+    font-family: sans-serif;
+    height: 30px;
+    background-color: rgb(43, 204, 10);
+    border: none;
+    border-radius: 20px;
+    transition: 0.5s;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10PX;
+    display: flex;
+    gap: 7px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.signup-form>form>button:hover {
+    cursor: pointer;
+    background-color: rgb(36, 172, 9);
+    transition: 0.5s;
+
+}
